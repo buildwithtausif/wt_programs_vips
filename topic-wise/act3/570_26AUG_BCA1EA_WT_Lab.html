@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Nested List, Table with spanning</title>
+    </head>
+    <body>
+        <!-- Nested ordered list -->
+         <!-- parent container -->
+        <h1>Oredered Nested List</h1>
+         <ol type="I"> 
+            <li>
+                <strong>Background Skills</strong>
+                <ol type="A">
+                    <li>Unix Commands</li>
+                    <li>Vim editor</li>
+                </ol>
+            </li>
+            <li>
+                <strong>HTML</strong>
+                <ol type="A">
+                    <li>Minimal Page</li>
+                    <li>Headings</li>
+                    <li>Tags</li>
+                    <li>
+                        Lists
+                        <ol type="i">
+                            <li>Unordered</li>
+                            <li>Ordered</li>
+                            <li>Definition</li>
+                            <li>Nested</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Links
+                        <ol type="i">
+                            <li>Absolute</li>
+                            <li>Relative</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Images
+                    </li>
+                </ol>
+            </li>
+            <li>
+                CSS
+                <ol type="A">
+                    <li>Anatomy</li>
+                    <li>
+                        Basic Concepts
+                        <ol type="i">
+                            <li>Element</li>
+                            <li>Id</li>
+                            <li>Class</li>
+                            <li>Group</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Programming
+                <ol type="A">
+                    <li>Python</li>
+                    <li>Javascript</li>
+                </ol>
+            </li>
+         </ol>
+
+         <!-- Nested Unordered List -->
+          <h1>Unordered Nested List</h1>
+          <h2>Example 1:</h2>
+          <h3 style="margin: 0 0 0 100px;">
+            <u>Course List</u>
+          </h3>
+          <ul>
+            <li>
+                DSA
+                <ul type="circle">
+                    <li>Array</li>
+                    <li>Linket list</li>
+                    <li>Stack</li>
+                    <li>Queue</li>
+                </ul>
+            </li>
+            <li>
+                Web Technologies
+                <ul type="circle">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li>Aptitude</li>
+            <li>Maths</li>
+            <li>General Aptitude</li>
+          </ul>
+
+
+
+          <!-- Table with spannings -->
+           <table bgcolor="grey" border="5" width="100%">
+            <caption><Strong>Race Results</Strong></caption>
+            <tr bgcolor="Yellow">
+                <th colspan="2">Runner</th>
+                <th>Time</th>
+                <th>Origin</th>
+            </tr>
+            <tr>
+                <td rowspan="3" bgcolor="skyblue">Men</td>
+                <td>1. Peter Teagan</td>
+                <td align="right">2:12:34</td>
+                <td>San Antonio, Texas</td>
+            </tr>
+            <tr>
+                <td>2. Kyle Wills</td>
+                <td align="right">2:13:34</td>
+                <td>Billings, Montana</td>
+            </tr>
+            <tr>
+                <td>3. Jason Wu</td>
+                <td align="right">2:14:34</td>
+                <td>Culter, Colorado</td>
+            </tr>
+            <tr>
+                <td rowspan="3" bgcolor="lightgreen">Women</td>
+                <td>4. Laura Blake</td>
+                <td align="right">2:19:34</td>
+                <td>Park City, Colorado</td>
+            </tr>
+                       <tr>
+                <td>5. Kathy Lasker</td>
+                <td align="right">2:40:54</td>
+                <td>Chicago, Illinois</td>
+            </tr>
+            <tr>
+                <td>6. Lisa Peterson</td>
+                <td align="right">2:11:34</td>
+                <td>Seattle, Washington</td>
+            </tr>
+           </table>
+    </body>
+</html>

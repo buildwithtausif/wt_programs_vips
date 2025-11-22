@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+      integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Event listener</title>
+    <style>
+      body {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #e5e5f7;
+        opacity: 0.8;
+        background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+        background-size: 10px 10px;
+      }
+      .box {
+        background-color: rgba(255, 255, 255, 0.6); /* transparent dark color */
+        backdrop-filter: blur(5px); /* optional, for glass effect */
+      }
+      #thisbtn {
+        transition: 0.25s !important;
+      }
+      #thisbtn:hover {
+        background-color: #198754 !important;
+        border: none !important;
+        color: aliceblue;
+      }
+      #resetBtn {
+        transition: 0.25s !important;
+      }
+      #resetBtn:hover {
+        background-color: #dc3545 !important;
+        border: none !important;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <div
+      class="box d-flex flex-column justify-content-center align-items-center p-5 rounded-3 border border-3 border-success-subtle"
+    >
+      <p id="magic-p" class="text-center text-capitalize">
+        The magic will happen right here!
+      </p>
+      <button
+        id="thisbtn"
+        class="btn w-100 p-2 bg-success-subtle text-capitalize border border-3 border-success-subtle"
+      >
+        Do Something
+      </button>
+      <button
+        id="resetBtn"
+        class="btn w-100 m-2 p-2 bg-danger-subtle text-capitalize border border-3 border-danger-subtle"
+      >
+        Reset
+      </button>
+    </div>
+
+    <script>
+      let mybutton = document.getElementById("thisbtn");
+      let resetbtn = document.getElementById("resetBtn");
+
+      let para = document.getElementById("magic-p");
+      mybutton.addEventListener("click", handleClick);
+      mybutton.addEventListener("mouseover", handleMover);
+      mybutton.addEventListener("mouseout", handleMout);
+
+      // handle events
+      function handleClick() {
+        para.innerText = "The button is clicked!";
+      }
+      function handleMover() {
+        para.innerText = "Hey! remove that mouse from button's tummy!";
+      }
+      function handleMout() {
+        para.innerText = "Good Human! never do this again!";
+      }
+      resetbtn.addEventListener("click", () => {
+        para.innerText = "The magic will happen right here!";
+      });
+    </script>
+  </body>
+</html>

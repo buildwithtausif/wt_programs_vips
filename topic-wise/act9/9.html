@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Program 9</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: aliceblue;
+                background-color: grey;
+            }
+            p {
+                margin: 10px auto;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 24px;
+            }
+            p:first-child {
+                font-style: italic;
+            }
+            p:last-child {
+                font-style: oblique;
+            }
+            p:nth-child(2) {
+                text-decoration: underline;
+            }
+            p:nth-child(3) {
+                text-decoration: line-through;
+            }
+            p:nth-child(4) {
+               font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is italic text</p>
+        <p>This is underlined text</p>
+        <p>This is striked text</p>
+        <p>This is bold text</p>
+        <p>This is oblique text</p>
+    </body>
+</html>

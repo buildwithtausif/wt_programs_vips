@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Program 18</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+            integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container p-5">
+            <h1 class="display1 text-capitalize">inbuilt functions & dialog box</h1>
+            <hr />
+        <pre>
+        <code>
+// Using dialog boxes
+alert("Welcome! This program shows usage of JS inbuilt functions.");
+// Prompt box
+let name = prompt("Enter your name:");
+
+// Confirm box
+let isReady = confirm("Do you want to continue?");
+
+if (isReady) {
+    // Using some inbuilt functions
+
+    // String functions
+    let upperName = name.toUpperCase();
+    alert("Your name in uppercase: " + upperName);
+
+    // Math functions
+    let num = 25.67;
+    alert("Number: " + num);
+    alert("Math.round(): " + Math.round(num));
+    alert("Math.floor(): " + Math.floor(num));
+    alert("Math.ceil(): " + Math.ceil(num));
+    alert("Math.random() (0-1): " + Math.random());
+    } else {
+        alert("You chose to exit. Goodbye!");
+    }
+            
+        </code>
+        </pre>
+        </div>
+        <script>
+            // Using dialog boxes
+            alert("Welcome! This program shows usage of JS inbuilt functions.");
+
+            // Prompt box
+            let name = prompt("Enter your name:");
+
+            // Confirm box
+            let isReady = confirm("Do you want to continue?");
+
+            if (isReady) {
+                // Using some inbuilt functions
+
+                // String functions
+                let upperName = name.toUpperCase();
+                alert("Your name in uppercase: " + upperName);
+
+                // Math functions
+                let num = 25.67;
+                alert("Number: " + num);
+                alert("Math.round(): " + Math.round(num));
+                alert("Math.floor(): " + Math.floor(num));
+                alert("Math.ceil(): " + Math.ceil(num));
+                alert("Math.random() (0-1): " + Math.random());
+            } else {
+                alert("You chose to exit. Goodbye!");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Box Model</title>
+    <!-- Same styles as index.html -->
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: url('https://images.pexels.com/photos/3330118/pexels-photo-3330118.jpeg') center/cover no-repeat fixed;
+        }
+        .mainWrapper header {
+            display: flex;
+            width: 100%;
+            padding: 10px 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: rgba(255, 215, 0, 0.6);
+            
+        }
+        .mainWrapper header + h1 {
+            margin: auto 10px;
+        }
+        .mainWrapper header ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .mainWrapper header ul > li {
+            padding: 5px 10px;
+            margin: 5px;
+        }
+        .mainWrapper main button {
+            float: right;
+            padding: 10px 20px;
+        }
+        /* Style for the back button on sub-pages */
+        .back-button {
+            text-decoration: none;
+            background-color: #4A5568; /* Dark contrasting color */
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            align-self: center; /* Aligns with nav */
+        }
+        .back-button:hover {
+            background-color: #2D3748;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <header>
+        <!-- Back button added -->
+        <a href="1.html" class="back-button">Back Home</a>
+        <nav>
+          <ul>
+            <!-- Updated links -->
+            <li><a href="headings.html">Learn H1-H6</a></li>
+            <li><a href="lists.html">Learn HTML lists</a></li>
+            <li><a href="anchors.html">Learn anchors</a></li>
+            <li><a href="boxmodel.html">Learn box model</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="notes">
+          <h2>The CSS Box Model</h2>
+          <dl>
+            <dt>Concept</dt>
+            <dd>
+              In CSS, every HTML element is treated as a rectangular box. The "box model" describes how this box is constructed.
+            </dd>
+            <dt>The Layers (from inside out)</dt>
+            <dd>
+              <ol>
+                <li><strong>Content:</strong> The actual text, image, or other content.</li>
+                <li><strong>Padding:</strong> The clear space around the content, inside the border.</li>
+                <li><strong>Border:</strong> The line that goes around the padding and content.</li>
+                <li><strong>Margin:</strong> The clear space outside the border, separating this element from other elements.</li>
+              </ol>
+            </dd>
+            <dt><code>box-sizing: border-box;</code></dt>
+            <dd>
+              This is a very useful CSS rule (you're using it!). By default, an element's <code>width</code> only applies to the <strong>content</strong>. 
+              <code>border-box</code> makes the <code>width</code> include the <strong>content, padding, AND border</strong>, which is much more intuitive for layout.
+            </dd>
+          </dl>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

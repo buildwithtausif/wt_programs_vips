@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Program 11</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            div {
+                width: 90%;
+                padding: 10px 20px;
+                background-color: wheat;
+                margin: 5px;
+            }
+            ul {
+                padding: 5px;
+                border: 2px dashed;
+                margin: 5px auto;
+            }
+            ul.one {
+                list-style: outside;
+            }
+            ul.two {
+                list-style: inside;
+            }
+            ul.two + ul {
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+           <p>List w/type=disc, style=outside</p>
+            <ul class="one">
+                <li>list-item1</li>
+                <li>list-item2</li>
+                <li>list-item3</li>
+                <li>list-item4</li>
+                <li>list-item5</li>
+            </ul>
+            <p>List w/type=circle, style=outside</p>
+            <ul type="circle">
+                <li>list-item1</li>
+                <li>list-item2</li>
+                <li>list-item3</li>
+                <li>list-item4</li>
+                <li>list-item5</li>
+            </ul>
+        </div>
+        <div>
+           <p>List w/type=disc, style=inside</p>
+            <ul class="two">
+                <li>list-item1</li>
+                <li>list-item2</li>
+                <li>list-item3</li>
+                <li>list-item4</li>
+                <li>list-item5</li>
+            </ul>
+            <p>List w/type=square, style=none</p>
+            <ul type="square">
+                <li>list-item1</li>
+                <li>list-item2</li>
+                <li>list-item3</li>
+                <li>list-item4</li>
+                <li>list-item5</li>
+            </ul>
+        </div>
+    </body>
+</html>

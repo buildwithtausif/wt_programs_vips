@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+
+<!DOCTYPE bookstore [
+    <!ELEMENT bookstore (book+)>
+    <!ELEMENT book (title, author, price)>
+    <!ATTLIST book id ID #REQUIRED>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+]>
+
+<bookstore>
+  <book id="b1">
+    <title>Gunaho Ka Devta</title>
+    <author>Dharamveer Bharti</author>
+    <price>450</price>
+  </book>
+
+  <book id="b2">
+    <title>Pushpgandha</title>
+    <author>Bhagwatiprasad Vajpeyi</author>
+    <price>399</price>
+  </book>
+
+  <book id="b3">
+    <title>Rashmirathi</title>
+    <author>Ramdhari Singh Dinkar</author>
+    <price>320</price>
+  </book>
+
+  <book id="b4">
+    <title>Madhushala</title>
+    <author>Harivansh Rai Bachchan</author>
+    <price>380</price>
+  </book>
+
+  <book id="b5">
+    <title>Godaan</title>
+    <author>Munshi Premchand</author>
+    <price>299</price>
+  </book>
+
+  <book id="b6">
+    <title>Chandrakanta</title>
+    <author>Devaki Nandan Khatri</author>
+    <price>350</price>
+  </book>
+</bookstore>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date, Math & String Objects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eee;
+            padding: 20px;
+        }
+        h2 {
+            background: #222;
+            color: #fff;
+            padding: 8px;
+        }
+        .box {
+            background: white;
+            border: 1px solid #aaa;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        pre {
+            background: #f7f7f7;
+            padding: 10px;
+            border: 1px dashed #666;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Usage of Date, Math & String Objects in JavaScript</h1>
+
+    <!-- DATE -->
+    <div class="box">
+        <h2>Date Object</h2>
+        <button onclick="dateFunctions()">Show Output</button>
+        <pre id="dateOutput"></pre>
+    </div>
+
+    <!-- MATH -->
+    <div class="box">
+        <h2>Math Object</h2>
+        <button onclick="mathFunctions()">Show Output</button>
+        <pre id="mathOutput"></pre>
+    </div>
+
+    <!-- STRING -->
+    <div class="box">
+        <h2>String Object</h2>
+        <button onclick="stringFunctions()">Show Output</button>
+        <pre id="stringOutput"></pre>
+    </div>
+
+    <script>
+
+        // DATE OBJECT
+        function dateFunctions() {
+            var d = new Date();
+            var txt = "";
+            txt += "Current Date: " + d + "\n";
+            txt += "getDate(): " + d.getDate() + "\n";
+            txt += "getMonth()+1: " + (d.getMonth()+1) + "\n";
+            txt += "getFullYear(): " + d.getFullYear() + "\n";
+            txt += "getHours(): " + d.getHours() + "\n";
+            txt += "toLocaleDateString(): " + d.toLocaleDateString() + "\n";
+            document.getElementById("dateOutput").innerText = txt;
+        }
+
+        // MATH OBJECT
+        function mathFunctions() {
+            var txt = "";
+            txt += "Math.PI: " + Math.PI + "\n";
+            txt += "Math.sqrt(81): " + Math.sqrt(81) + "\n";
+            txt += "Math.pow(5,2): " + Math.pow(5,2) + "\n";
+            txt += "Math.abs(-12): " + Math.abs(-12) + "\n";
+            txt += "Math.ceil(4.3): " + Math.ceil(4.3) + "\n";
+            txt += "Math.floor(4.9): " + Math.floor(4.9) + "\n";
+            txt += "Math.random(): " + Math.random() + "\n";
+            document.getElementById("mathOutput").innerText = txt;
+        }
+
+        // STRING OBJECT
+        function stringFunctions() {
+            var s = "  JavaScript Web Technology  ";
+            var txt = "";
+            txt += "Original String: '" + s + "'\n";
+            txt += "trim(): '" + s.trim() + "'\n";
+            txt += "toUpperCase(): " + s.toUpperCase() + "\n";
+            txt += "toLowerCase(): " + s.toLowerCase() + "\n";
+            txt += "length: " + s.length + "\n";
+            txt += "indexOf('Web'): " + s.indexOf("Web") + "\n";
+            txt += "substring(2,10): '" + s.substring(2,10) + "'\n";
+            txt += "replace('JavaScript','JS'): " + s.replace("JavaScript","JS") + "\n";
+            document.getElementById("stringOutput").innerText = txt;
+        }
+
+    </script>
+
+</body>
+</html>

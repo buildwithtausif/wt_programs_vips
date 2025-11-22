@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    </head>
+    <body class="bg-light-subtle">
+        <div class="conatiner p-2">
+            <h1 class="display1 text-capitalize text-center p-4">Farewell party survey form</h1>
+            <form action="#" class="container d-flex flex-column">
+                <label class="form-label" for="person">Name</label>
+                <input type="text" id="person" class="form-control" placeholder="Enter Your Name" />
+                <label class="form-label" for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Your Email" />
+                <label class="form-label" for="age">Age</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter Your Age" />
+                <label class="form-label" for="whoru">Which option best decribes you?</label>
+                <select name="whoru" id="whoru" class="form-select">
+                    <option value="student">Student</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="private-employee">Private Employee</option>
+                    <option value="govt-employee">Govt. Employee</option>
+                </select>
+                <label class="form-label" for="consent">Will you attend the party?</label>
+                <div>
+                    <input type="radio" class="form-check-input" name="consent" id="consent-yes" value="yes" />
+                    <label class="form-label" for="consent-yes">Yes</label>
+                    <input type="radio" class="form-check-input" name="consent" id="consent-no" value="yes" />
+                    <label class="form-label" for="consent-no">No</label>
+                </div>
+                <label class="form-label" for="likes">What did you like about the program?</label>
+                <ul class="list-unstyled">
+                    <li>
+                        <input type="checkbox" class="form-check-input" name="likes" id="training" />
+                        <label class="form-label" for="training">Training</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="form-check-input" name="likes" id="session" />
+                        <label class="form-label" for="session">The learning sessions from industry experts</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="form-check-input" name="likes" id="meetup" />
+                        <label class="form-label" for="meetup">Community meetups</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="form-check-input" name="likes" id="bb-session" />
+                        <label class="form-label" for="bb-session">Brown Bag Sessions</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="form-check-input" name="likes" id="hybrid" />
+                        <label class="form-label" for="hybrid">Switching to hybrid mode</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" class="form-check-input" name="likes" id="misc" />
+                        <label class="form-label" for="misc">Food, Office etc.</label>
+                    </li>
+                </ul>
+
+                <label for="comments" class="form-label">Any comments or suggestions</label>
+                <textarea name="comments" class="form-control" id="comments" cols="30" rows="5"></textarea>
+                <hr />
+                <div class="d-flex justify-content-between">
+                    <input type="reset" class="btn btn-danger" />
+                    <input type="submit" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

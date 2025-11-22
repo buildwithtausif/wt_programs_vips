@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Zebra Table</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+            }
+            table {
+                border-collapse: collapse;
+                width: 90%;
+                margin: 0;
+                padding: 0;
+            }
+            table tr:nth-child(odd):not(thead tr) {
+                background-color: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Zebra Striped Table</h1>
+        <table class="zebra-table" border="1">
+            <caption>
+                Data Table
+            </caption>
+            <thead>
+                <tr>
+                    <th>Heading 1</th>
+                    <th>Heading 2</th>
+                    <th>Heading 3</th>
+                    <th>Heading 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>data 1</td>
+                    <td>data 2</td>
+                    <td>data 3</td>
+                    <td>data 4</td>
+                </tr>
+                <tr>
+                    <td>data 5</td>
+                    <td>data 6</td>
+                    <td>data 7</td>
+                    <td>data 8</td>
+                </tr>
+                <tr>
+                    <td>data 9</td>
+                    <td>data 10</td>
+                    <td>data 11</td>
+                    <td>data 12</td>
+                </tr>
+                <tr>
+                    <td>data 13</td>
+                    <td>data 14</td>
+                    <td>data 15</td>
+                    <td>data 16</td>
+                </tr>
+                <tr>
+                    <td>data 13</td>
+                    <td>data 14</td>
+                    <td>data 15</td>
+                    <td>data 16</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

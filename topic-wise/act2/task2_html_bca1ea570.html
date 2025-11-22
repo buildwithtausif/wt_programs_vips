@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+    <head>
+        <title>BCA-1EA: 570, Lab2</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background: url("https://images.unsplash.com/photo-1429704658776-3d38c9990511?q=80&w=1079&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                position: relative; /* Needed for absolute positioning of image */
+                min-height: 100vh;
+            }
+            .top-right-image {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                border: 2px solid #FCC61D;
+                object-fit: cover;
+            }
+            .offer-ticker {
+                color: #FCC61D;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+            .menu {
+                margin: 5px auto;
+                padding: 10px 20px;
+                width: 90%;
+                max-width: 800px; /* Added for better readability on large screens */
+                display: flex;
+                flex-direction: column;
+                background: rgba(0,0,0, 0.65); /* Slightly more opaque */
+                border-radius: 10px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #F7F7F7;
+            }
+            .menu ol li span.sub-heading {
+                padding: 5px 10px;
+                background-color: #FCC61D;
+                color: #000000;
+                font-weight: 600;
+                border-radius: 10px;
+                display: inline-block; /* Ensures background color wraps text properly */
+            }
+            
+            /* Different styles for each ordered list item */
+            .item-1 {
+                font-family: 'Georgia', 'Times New Roman', serif;
+                color: #FFDAB9; /* Light Peach */
+            }
+            .item-2 {
+                font-family: 'Courier New', Courier, monospace;
+                color: #E0FFFF; /* Light Cyan */
+            }
+            .item-3 {
+                font-family: 'Arial Black', Gadget, sans-serif;
+                color: #F0E68C; /* Khaki */
+            }
+
+            .menu ol li ul {
+                padding: 10px;
+            }
+            .menu ol li ul li {
+                position: relative;
+                margin: 5px 35px; /* Added small vertical margin */
+            }
+            .menu ol li ul li span {
+                float: right;
+            }
+
+            /* Style for the horizontal lines */
+            .menu hr {
+                border: 0;
+                height: 1px;
+                background-image: linear-gradient(to right, rgba(252, 198, 29, 0), rgba(252, 198, 29, 0.75), rgba(252, 198, 29, 0));
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- 1. Image in top right corner -->
+        <img src="https://images.pexels.com/photos/1435895/pexels-photo-1435895.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+             alt="Main Item" 
+             class="top-right-image"
+             onerror="this.src='https://placehold.co/100x100/FCC61D/000?text=Menu'">
+        
+        <!-- 2. Heading as a marquee -->
+        <h1>
+            <marquee class="offer-ticker">70% off!!! hurry up!</marquee>
+        </h1>
+
+        <!-- 3. Nested unordered list inside ordered list -->
+        <div class="menu">
+            <h2>
+                Menu
+            </h2>
+            <div>
+                <ol type="1">
+                    <li>
+                        <!-- 4. Different font/color for item 1 -->
+                        <span class="sub-heading item-1">Main Course</span>
+                        <ul>
+                            <li>Cheeseburger <span>$34</span></li>
+                            <li>Cheese sandwich <span>$22</span></li>
+                            <li>Chicken Burger <span>$23</span></li>
+                            <li>Hot Dog <span>$24</span></li>
+                        </ul>
+                    </li> 
+                    <!-- 5. Horizontal line -->
+                    <hr>
+                    <li>
+                        <!-- 4. Different font/color for item 2 -->
+                        <span class="sub-heading item-2">Appetizers</span>
+                        <ul>
+                            <li>Fruit Salad <span>$36</span></li>
+                            <li>Cocktails <span>$17</span></li>
+                            <li>Nuggets <span>$36</span></li>
+                            <li>Sandwich <span>$7</span></li>
+                            <li>French Fries <span>$2</span></li>
+                        </ul>
+                    </li>
+                    <!-- 5. Horizontal line -->
+                    <hr>
+                    <li>
+                        <!-- 4. Different font/color for item 3 -->
+                        <span class="sub-heading item-3">Beverages</span>
+                        <ul>
+                            <li>Milk Shake <span>$36</span></li>
+                            <li>Iced Tea <span>$17</span></li>
+                            <li>Orange Juice <span>$36</span></li>
+                            <li>Lemon Tea <span>$7</span></li>
+                            <li>Coffee <span>$2</span></li>
+                        </ul>
+                    </li> 
+                    <!-- 5. Horizontal line -->
+                    <hr>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>

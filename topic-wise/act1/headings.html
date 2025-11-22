@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn H1-H6</title>
+    <!-- Same styles as index.html -->
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: url('https://images.pexels.com/photos/3330118/pexels-photo-3330118.jpeg') center/cover no-repeat fixed;
+        }
+        .mainWrapper header {
+            display: flex;
+            width: 100%;
+            padding: 10px 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: rgba(255, 215, 0, 0.6);
+            
+        }
+        .mainWrapper header + h1 {
+            margin: auto 10px;
+        }
+        .mainWrapper header ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .mainWrapper header ul > li {
+            padding: 5px 10px;
+            margin: 5px;
+        }
+        .mainWrapper main button {
+            float: right;
+            padding: 10px 20px;
+        }
+        /* Style for the back button on sub-pages */
+        .back-button {
+            text-decoration: none;
+            background-color: #4A5568; /* Dark contrasting color */
+            color: white;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            align-self: center; /* Aligns with nav */
+        }
+        .back-button:hover {
+            background-color: #2D3748;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <header>
+        <!-- Back button added -->
+        <a href="1.html" class="back-button">Back Home</a>
+        <nav>
+          <ul>
+            <!-- Updated links -->
+            <li><a href="headings.html">Learn H1-H6</a></li>
+            <li><a href="lists.html">Learn HTML lists</a></li>
+            <li><a href="anchors.html">Learn anchors</a></li>
+            <li><a href="boxmodel.html">Learn box model</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="notes">
+          <h2>HTML Headings (H1-H6)</h2>
+          <dl>
+            <dt>Purpose</dt>
+            <dd>
+              Heading tags are used to define headings or titles in a document. 
+              <code>&lt;h1&gt;</code> is the most important (largest) heading, and 
+              <code>&lt;h6&gt;</code> is the least important (smallest).
+            </dd>
+            <dt>Hierarchy</dt>
+            <dd>
+              You should use headings in order to create a logical document structure. 
+              Search engines use this structure to understand your content.
+            </dd>
+            <dt>Example</dt>
+            <dd>
+<pre>
+&lt;h1&gt;Main Title&lt;/h1&gt;
+&lt;h2&gt;Subtitle&lt;/h2&gt;
+&lt;h3&gt;Sub-section&lt;/h3&gt;
+&lt;h4&gt;Sub-section&lt;/h4&gt;
+&lt;h5&gt;Sub-section&lt;/h5&gt;
+&lt;h6&gt;Sub-section&lt;/h6&gt;
+</pre>
+            </dd>
+            <dt>Preview</dt>
+            <dd>
+            <h1>Hello</h1>
+            <h2>Hello</h2>
+            <h3>Hello</h3>
+            <h4>Hello</h4>
+            <h5>Hello</h5>
+            <h6>Hello</h6>
+            </dd>
+          </dl>
+        </div>
+        <!-- No "explore more" button on sub-pages -->
+      </main>
+    </div>
+  </body>
+</html>

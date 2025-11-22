@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML tut demo site</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: url('https://images.pexels.com/photos/3330118/pexels-photo-3330118.jpeg') center/cover no-repeat fixed;
+        }
+        .mainWrapper header {
+            display: flex;
+            width: 100%;
+            padding: 10px 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: rgba(255, 215, 0, 0.6);
+            
+        }
+        .mainWrapper header + h1 {
+            margin: auto 10px;
+        }
+        .mainWrapper header ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .mainWrapper header ul > li {
+            padding: 5px 10px;
+            margin: 5px;
+        }
+        .mainWrapper marquee {
+            color: red;
+        }
+        .mainWrapper main button {
+            float: right;
+            padding: 10px 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <header>
+        <h1>Explore</h1>
+        <nav>
+          <ul>
+            <li><a href="headings.html">Learn H1-H6</a></li>
+            <li><a href="lists.html">Learn HTML lists</a></li>
+            <li><a href="anchors.html">Learn anchors</a></li>
+            <li><a href="boxmodel.html">Learn box model</a></li>
+          </ul>
+        </nav>
+      </header>
+      <marquee direction="right" width="100%">HTML tutorial</marquee>
+      <main>
+        <div class="notes">
+          <h2>What is HTML?</h2>
+          <dl>
+            <dt>1.1 Overview</dt>
+            <dd>
+              HTML is a markup language, which is used to create basic structure
+              of a webpage.
+            </dd>
+            <dt>1.2 Markup language</dt>
+            <dd>
+              A markup language is a system for annotating a document with
+              symbols or tags to define its structure, formatting, and the
+              relationship between its parts.
+            </dd>
+            <dt>1.3 Generations of HTML</dt>
+            <dd>
+              <p>
+                HTML (HyperText Markup Language) has evolved significantly since
+                its inception. Here are its key generations:
+              </p>
+              <ul>
+                <li>
+                  <strong>HTML (Approx. 1991):</strong> The initial, informal
+                  version created by Tim Berners-Lee to share documents.
+                </li>
+                <li>
+                  <strong>HTML 2.0 (1995):</strong> The first official standard
+                  (RFC 1866). It formalized core features like headings, lists,
+                  and forms.
+                </li>
+                <li>
+                  <strong>HTML 3.2 (1997):</strong> A W3C standard that added
+                  widely-used features from browser vendors, including tables,
+                  applets, and text flow around images.
+                </li>
+                <li>
+                  <strong>HTML 4.01 (1999):</strong> A long-lasting and
+                  important standard. It strongly emphasized the separation of
+                  content structure (HTML) from presentation, pushing the use of
+                  CSS (Cascading Style Sheets) for styling.
+                </li>
+                <li>
+                  <strong>XHTML 1.0 (2000):</strong> A reformulation of HTML
+                  4.01 as a stricter XML (Extensible Markup Language)
+                  application. It enforced stricter syntax rules (e.g., all tags
+                  must be closed).
+                </li>
+                <li>
+                  <strong>HTML5 (2014):</strong> The current major standard. It
+                  introduced many new features for modern web applications,
+                  including:
+                  <ul>
+                    <li>
+                      New semantic elements like <code>&lt;article&gt;</code>,
+                      <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>,
+                      and <code>&lt;header&gt;</code>.
+                    </li>
+                    <li>
+                      Native support for <code>&lt;video&gt;</code> and
+                      <code>&lt;audio&gt;</code> elements.
+                    </li>
+                    <li>
+                      New form controls (e.g., <code>date</code>,
+                      <code>email</code>, <code>tel</code>).
+                    </li>
+                    <li>
+                      The <code>&lt;canvas&gt;</code> element for 2D drawing and
+                      JavaScript APIs.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+        <hr>
+        <button>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">explore more on w3schools</a>
+        </button>
+      </main>
+    </div>
+  </body>
+</html>

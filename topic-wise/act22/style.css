@@ -1,0 +1,44 @@
+bookstore {
+  display: block;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #fafafa;
+  padding: 25px;
+}
+
+book {
+  display: block;
+  margin: 20px 0;
+  background: white;
+  padding: 18px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+title {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+author, price {
+  display: block;
+  font-size: 15px;
+  color: #555;
+  margin: 4px 0;
+}
+
+/* Add labels before data */
+author::before {
+  content: "Author: ";
+  font-weight: bold;
+  color: #000;
+}
+
+price::before {
+  content: "Price: ₹";
+  font-weight: bold;
+  color: #000;
+}

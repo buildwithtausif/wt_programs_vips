@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Program 10</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                font-family: sans-serif;
+                gap: 5px;
+            }
+            .box {
+                width: 90%;
+                background-color: wheat;
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+            p:nth-child(1) {
+                text-align: center;
+            }
+            p:nth-child(3) {
+                text-align: end;
+            }
+            p:nth-child(4) {
+                text-transform: uppercase;
+            }
+            p:nth-child(5) {
+                font-weight: bold;
+                font-family: cursive;
+            }
+            #btn {
+                padding: 10px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p>Center aligned text</p>
+            <p>left-aligned text</p>
+            <p>right-aligned text</p>
+            <p>text-transform: upper case;</p>
+            <p>cursive font in bold</p>
+        </div>
+        <button id="btn">
+            id-selected
+        </button>
+    </body>
+</html>
