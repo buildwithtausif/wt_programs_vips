@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Various Types of Images</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    img {
-      display: block;
-      margin-bottom: 20px;
-      max-width: 300px;
-      border: 1px solid #ccc;
-      padding: 5px;
-    }
-    h2 {
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Webpage with Various Types of Images</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Various Types of Images</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      img {
+        display: block;
+        margin-bottom: 20px;
+        max-width: 300px;
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+      .bordered {
+        border: 3px solid black;
+      }
+      .rounded {
+        border-radius: 15px;
+      }
+      .circle {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+      .shadow {
+        box-sizing: border-box;
+        box-shadow: 0 0 10px gray;
+      }
+      h2 {
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Webpage with Various Types of Images</h1>
 
-  <h2>1. JPEG Image</h2>
-  <img src="example1.jpg" alt="Sample JPEG Image">
+    <h2>1. JPEG Image - normal styling</h2>
+    <img src="example1.jpg" alt="Sample JPEG Image" />
 
-  <h2>2. PNG Image</h2>
-  <img src="example2.png" alt="Sample PNG Image">
+    <h2>2. PNG Image - border</h2>
+    <img src="example2.png" class="bordered" alt="Sample PNG Image" />
 
-  <h2>3. GIF Image</h2>
-  <img src="example3.gif" alt="Sample GIF Image">
+    <h2>3. GIF Image - corner radius</h2>
+    <img src="example3.gif" class="rounded" alt="Sample GIF Image" />
 
-  <h2>4. SVG Image</h2>
-  <img src="example4.svg" alt="Sample SVG Image">
+    <h2>4. SVG Image - box-shadow</h2>
+    <img src="example4.svg" class="shadow" alt="Sample SVG Image" />
 
-  <h2>5. Image from URL</h2>
-  <img src="https://images.pexels.com/photos/34744500/pexels-photo-34744500.jpeg?_gl=1*15882pf*_ga*MTc0MjM4MzQ5NS4xNzYzMjgxNTg5*_ga_8JE65Q40S6*czE3NjMyODE1ODgkbzEkZzEkdDE3NjMyODE2MzUkajEzJGwwJGgw" alt="Image from URL">
-
-</body>
+    <h2>5. Image from URL - circular</h2>
+    <img
+      src="https://images.pexels.com/photos/34744500/pexels-photo-34744500.jpeg?_gl=1*15882pf*_ga*MTc0MjM4MzQ5NS4xNzYzMjgxNTg5*_ga_8JE65Q40S6*czE3NjMyODE1ODgkbzEkZzEkdDE3NjMyODE2MzUkajEzJGwwJGgw"
+      alt="Image from URL"
+      class="circle"
+    />
+  </body>
 </html>
